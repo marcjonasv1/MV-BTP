@@ -1,50 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MV-BTP - Terrassement & Construction</title>
+    <title>MV-BTP - Construction et Travaux Publics à Bordeaux</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #003366;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #003366;
-        }
-        footer {
-            background-color: #003366;
+            background-color: #0a2d55;
             color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service {
-            background-color: #fff;
             padding: 20px;
-            border-left: 4px solid #003366;
-            flex: 1 1 calc(50% - 20px);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .btn-devis {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #f47920;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        h2 {
+            color: #0a2d55;
+        }
+        .services, .realisations, .contact {
+            margin-top: 20px;
+        }
+        .realisations img {
+            width: 30%;
+            margin-right: 2%;
+            margin-bottom: 20px;
+            vertical-align: top;
+        }
+        .realisations a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0a2d55;
+            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -52,38 +59,52 @@
 
 <header>
     <h1>MV-BTP</h1>
-    <p>Depuis 2004 à Bordeaux - Terrassement & Construction</p>
+    <a href="#contact" class="btn-devis">Demander un devis</a>
 </header>
 
-<div class="container">
-    <h2>À propos</h2>
-    <p>Créée le 15 avril 2004 à Bordeaux, MV-BTP est une entreprise spécialisée dans les travaux de terrassement et la construction d’infrastructures de grande envergure. Forts de plus de 20 ans d’expérience, nous intervenons dans la construction d’hôtels, d’écoles, de routes et autres bâtiments publics ou privés.</p>
+<section>
+    <h2>Depuis 2004 à Bordeaux, MV-BTP construit l’avenir.</h2>
+</section>
 
+<section class="services">
     <h2>Nos services</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Terrassement</h3>
-            <p>Préparation de terrains pour tous types de constructions, nivellement, fouilles, déblais/remblais.</p>
-        </div>
-        <div class="service">
-            <h3>Construction d’hôtels</h3>
-            <p>Réalisation de complexes hôteliers avec une attention particulière au confort, à l’esthétique et à la durabilité.</p>
-        </div>
-        <div class="service">
-            <h3>Construction d’écoles</h3>
-            <p>Conception et construction d’établissements scolaires adaptés aux normes modernes de sécurité et de pédagogie.</p>
-        </div>
-        <div class="service">
-            <h3>Construction de routes</h3>
-            <p>Infrastructure routière complète, de la base jusqu’au revêtement final, avec des matériaux de haute qualité.</p>
-        </div>
-    </div>
-</div>
+    <p><strong>Terrassement</strong><br>
+    Préparation de vos terrains pour tous types de projets.</p>
 
-<footer>
-    <p>MV-BTP - Bordeaux - Depuis 2004</p>
-    <p>Contact : contact@mv-btp.fr | 05 56 XX XX XX</p>
-</footer>
+    <p><strong>Construction d’hôtels et d’écoles</strong><br>
+    Des bâtiments solides et modernes.</p>
+
+    <p><strong>Travaux routiers</strong><br>
+    Création et rénovation de routes durables.</p>
+</section>
+
+<section>
+    <h2>Pourquoi choisir MV-BTP ?</h2>
+    <ul>
+        <li>20 ans d’expérience dans le BTP.</li>
+        <li>Matériel de pointe pour tous nos chantiers.</li>
+        <li>Engagement qualité : respect des délais, sécurité, finition irréprochable.</li>
+        <li>Service client : Votre satisfaction, notre priorité.</li>
+    </ul>
+</section>
+
+<section class="realisations">
+    <h2>Nos réalisations</h2>
+    <img src="image1.jpg" alt="Chantier de terrassement">
+    <img src="image2.jpg" alt="Construction d’un bâtiment">
+    <img src="image3.jpg" alt="Bâtiment moderne">
+    <br>
+    <a href="#realisations">Voir nos réalisations</a>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><strong>MV-BTP</strong><br>
+    E-mail : <a href="mailto:mv-btp@gmail.com">mv-btp@gmail.com</a><br>
+    Téléphone : <a href="tel:+33644675030">+33 6 44 67 50 30</a><br>
+    Adresse : 12 rue des Entrepreneurs, 33000 Bordeaux
+    </p>
+</section>
 
 </body>
 </html>
